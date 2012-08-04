@@ -1,0 +1,14 @@
+{
+  "name": "FindTab",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "An extension to help find often lost tabs",
+  "browser_action": {
+  		"default_icon": "icon.png",
+		"default_popup": "list.html"
+  },
+  "permissions": [
+		"tabs",
+    "http://api.flickr.com/"
+  ]
+}
