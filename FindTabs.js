@@ -6,12 +6,6 @@ var FindTab = (function() {
 	 	'gMail' : '*://mail.google.com/*'
 	};
 
-	var initList = function() {
-		for(i in watchSites) {
-			$(body).html($(body).html() + '<div><a href="#">'+i+'</a></div>');
-		}
-	};
-
 	var getTabsCallback = function(tabs) {
 		for(i in tabs) {
 			goToTab(tabs[i]);
@@ -20,7 +14,6 @@ var FindTab = (function() {
 
 	var getTab = function(search) {
 		chrome.tabs.query({
-				//url: '*://movies.netflix.com/*'
 				url : search
 			}, getTabsCallback
 		);
@@ -47,7 +40,9 @@ var FindTab = (function() {
 		
 		initList : function() {
 			for(i in watchSites) {
-				$('body').html($('body').html() + '<div><a href="#" class="tabLink" data-link="'+i+'">'+i+'</a></div>');
+				$('body').html($('body').html() + 
+						'<div class="site_button"><img src="icons/'+i+'.ico" /><a href="#" class="tabLink" data-link="'+i+'">'+i+'</a></div>'
+						);
 				console.log('Trying: ' + i);
 			}
 		}

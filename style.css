@@ -1,0 +1,29 @@
+div {
+	margin:0;
+	padding:0;
+}
+
+div.site_button {
+	width:100px;
+	height:21px;
+	margin: 3px;
+}
+
+div.site_button img {
+	height:20px;
+	width:20px;
+	padding-right:5px;
+}
+
+div.site_button a {
+	text-decoration:none;
+	margin:0 3px 0 3px;
+	font-family:Arial, Helvetica, sans-serif;
+	position: relative;
+	bottom: 4px;
+}
+
+h4 {
+	margin:0;
+	padding:0;
+}
