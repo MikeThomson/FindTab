@@ -3,7 +3,8 @@ var FindTab = (function() {
 	var watchSites = {
 		'Pandora' : '*://*.pandora.com/*',
 		'Netflix' : '*://movies.netflix.com/*',
-	 	'gMail' : '*://mail.google.com/*'
+	 	'gMail' : '*://mail.google.com/*',
+		'twitch.tv' : '*://www.twitch.tv/*'
 	};
 
 	var getTabsCallback = function(tabs) {
